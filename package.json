@@ -1,0 +1,53 @@
+{
+  "name": "fanfiction-api",
+  "version": "0.0.1",
+  "description": "retrieve and manage your data from fanfiction.net",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamilleBC/fanfiction-api.git"
+  },
+  "keywords": [
+    "ffnet",
+    "fanfiction",
+    "fanfiction.net",
+    "fanfic"
+  ],
+  "author": "CamilleBC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CamilleBC/fanfiction-api/issues"
+  },
+  "homepage": "https://github.com/CamilleBC/fanfiction-api#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.2"
+  },
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "amd",
+    "declaration": true,
+    "outFile": "lib/index.js",
+    "strict": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "testRegex": "^.+\\.test\\.ts$"
+  }
+}
